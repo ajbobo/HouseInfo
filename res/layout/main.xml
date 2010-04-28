@@ -17,6 +17,7 @@
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:layout_toRightOf="@+id/lblSellingPrice"
+		android:layout_marginLeft="42px"
 		android:text="180000" />
 	<TextView
 		android:id="@+id/lblCurrentMortgage"
@@ -33,6 +34,7 @@
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/txtSellingPrice"
 		android:layout_toRightOf="@+id/lblCurrentMortgage"
+		android:layout_marginLeft="7px"
 		android:text="122300" />
 	<TextView
 		android:id="@+id/lblRealtorFees"
@@ -49,6 +51,7 @@
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/txtCurrentMortgage"
 		android:layout_toRightOf="@+id/lblRealtorFees"
+		android:layout_marginLeft="17px"
 		android:text="5" />
 	<EditText
 		android:id="@+id/txtShowRealtorFees"
@@ -74,6 +77,7 @@
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/txtShowRealtorFees"
 		android:layout_toRightOf="@+id/lblClosingCosts"
+		android:layout_marginLeft="38px"
 		android:text="7500" />
 	<TextView
 		android:id="@+id/lblDownPayment"
@@ -107,6 +111,7 @@
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/txtDownPayment"
 		android:layout_toRightOf="@+id/lblPossibleMortgage"
+		android:layout_marginLeft="5px"
 		android:editable="false"
 		android:text="" />
 	<TextView

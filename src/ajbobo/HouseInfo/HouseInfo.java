@@ -12,16 +12,13 @@ import android.widget.TextView.OnEditorActionListener;
 
 public class HouseInfo extends Activity
 {
-	private static Button btnDoIt;
-	private static EditText txtRealtorFees;
-
 	/** Called when the activity is first created. */
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		btnDoIt = (Button) findViewById(R.id.btnDoIt);
+		Button btnDoIt = (Button) findViewById(R.id.btnDoIt);
 		btnDoIt.setOnClickListener(new OnClickListener()
 		{
 			public void onClick(View v)
@@ -30,7 +27,7 @@ public class HouseInfo extends Activity
 			}
 		});
 
-		txtRealtorFees = (EditText) findViewById(R.id.txtRealtorFees);
+		EditText txtRealtorFees = (EditText) findViewById(R.id.txtRealtorFees);
 		txtRealtorFees.setOnEditorActionListener(new OnEditorActionListener()
 		{
 			public boolean onEditorAction(TextView v, int actionId, KeyEvent event)
