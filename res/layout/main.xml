@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" >
+	<TextView
+		android:id="@+id/lblSellingPrice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_alignBaseline="@+id/txtSellingPrice"
+		android:layout_marginRight="5px"
+		android:text="Selling Price"/>
+	<EditText
+		android:id="@+id/txtSellingPrice"
+		android:background="@android:drawable/editbox_background"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/lblSellingPrice"
+		android:text="180000" />
+	<TextView
+		android:id="@+id/lblCurrentMortgage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_alignBaseline="@+id/txtCurrentMortgage"
+		android:layout_below="@+id/txtSellingPrice"
+		android:layout_marginRight="5px"
+		android:text="Current Mortgage" />
+	<EditText
+		android:id="@+id/txtCurrentMortgage"
+		android:background="@android:drawable/editbox_background"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtSellingPrice"
+		android:layout_toRightOf="@+id/lblCurrentMortgage"
+		android:text="122300" />
+	<TextView
+		android:id="@+id/lblRealtorFees"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/txtRealtorFees"
+		android:layout_below="@+id/txtCurrentMortgage"
+		android:layout_marginRight="5px"
+		android:text="Realtor Fees (%)" />
+	<EditText
+		android:id="@+id/txtRealtorFees"
+		android:background="@android:drawable/editbox_background"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtCurrentMortgage"
+		android:layout_toRightOf="@+id/lblRealtorFees"
+		android:text="5" />
+	<EditText
+		android:id="@+id/txtShowRealtorFees"
+		android:background="@android:drawable/editbox_background"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_below="@+id/txtRealtorFees"
+		android:layout_alignLeft="@+id/txtRealtorFees"
+		android:editable="false"
+		android:text=""  />
+	<TextView
+		android:id="@+id/lblClosingCosts"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/txtClosingCosts"
+		android:layout_below="@+id/txtShowRealtorFees"
+		android:layout_marginRight="5px"
+		android:text="Closing Costs" />
+	<EditText
+		android:id="@+id/txtClosingCosts"
+		android:background="@android:drawable/editbox_background"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtShowRealtorFees"
+		android:layout_toRightOf="@+id/lblClosingCosts"
+		android:text="7500" />
+	<TextView
+		android:id="@+id/lblDownPayment"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/txtDownPayment"
+		android:layout_below="@+id/txtClosingCosts"
+		android:layout_marginRight="5px"
+		android:text="Down Payment (%)" />
+	<EditText
+		android:id="@+id/txtDownPayment"
+		android:background="@android:drawable/editbox_background"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtClosingCosts"
+		android:layout_toRightOf="@+id/lblDownPayment"
+		android:layout_marginBottom="15px"
+		android:text="20" />
+	<TextView
+		android:id="@+id/lblPossibleMortgage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/txtPossibleMortgage"
+		android:layout_below="@+id/txtDownPayment"
+		android:layout_marginRight="5px"
+		android:text="Possible Mortgage" />
+	<EditText
+		android:id="@+id/txtPossibleMortgage"
+		android:background="@android:drawable/editbox_background"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtDownPayment"
+		android:layout_toRightOf="@+id/lblPossibleMortgage"
+		android:editable="false"
+		android:text="" />
+	<TextView
+		android:id="@+id/lblFinanceAmount"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/txtFinanceAmount"
+		android:layout_below="@+id/txtPossibleMortgage"
+		android:layout_marginRight="5px"
+		android:text="Financed Amount" />
+	<EditText
+		android:id="@+id/txtFinanceAmount"
+		android:background="@android:drawable/editbox_background"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtPossibleMortgage"
+		android:layout_toRightOf="@+id/lblFinanceAmount"
+		android:layout_alignLeft="@+id/txtPossibleMortgage"
+		android:editable="false"
+		android:text="" />
+	<Button
+		android:id="@+id/btnDoIt"
+		android:layout_width="200px"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtFinanceAmount"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10px"
+		android:text="Calculate" />
+</RelativeLayout>
+	
+	
